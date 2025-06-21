@@ -1,0 +1,227 @@
+:root {
+  --bg: #8eead4;
+  --text: #000000;
+  --box: #f1f1f1;
+  --primary: #007acc;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --box: #1e1e1e;
+  --primary: #00bfff;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
+}
+
+.plane {
+  position: absolute;
+  width: 280px;
+  top: 80px;
+  animation: fly 8s linear infinite;
+  z-index: 0;
+}
+
+.awan{
+  position: absolute;
+  width: 200px;
+  top: 100px;
+  animation: fly2 10s linear infinite;
+  z-index: 0;
+}
+
+
+.awan2{
+  position: absolute;
+  width: 180px;
+  top: 150px;
+  animation: fly2 8s linear infinite;
+  z-index: 0;
+}
+
+.awan3{
+  position: absolute;
+  width: 250px;
+  top: 200px;
+  animation: fly2 9s linear infinite;
+  z-index: 0;
+}
+
+.awan4{
+  position: absolute;
+  width: 180px;
+  top: 300px;
+  animation: fly2 10s linear infinite;
+  z-index: 0;
+}
+
+.awan5{
+  position: absolute;
+  width: 250px;
+  top: 300px;
+  animation: fly 10s linear infinite;
+  z-index: 0;
+}
+
+.awan6{
+  position: absolute;
+  width: 180px;
+  top: 210px;
+  animation: fly 10s linear infinite;
+  z-index: 0;
+}
+
+.plane3{
+  position: absolute;
+  width: 80px;
+  top: 280px;
+  animation: fly 8s linear infinite;
+  z-index: 0;
+}
+
+.plane4{
+  position: absolute;
+  width: 80px;
+  top: 380px;
+  animation: fly2 8s linear infinite;
+  z-index: 0;
+}
+
+.plane5{
+  position: absolute;
+  width: 80px;
+  top: 480px;
+  animation: fly 8s linear infinite;
+  z-index: 0;
+}
+
+@keyframes fly {
+  0% {
+    left: -100px;
+    transform: rotate(10deg);
+  }
+  100% {
+    left: 110%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fly2 {
+  0% {
+    right: -100px;
+    transform: rotate(10deg);
+  }
+  100% {
+    right: 110%;
+    transform: rotate(0deg);
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  margin: 100px auto;
+  background: #cccccc33;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #005f99;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--bg);
+  border-left: 6px solid var(--primary);
+  border-radius: 10px;
+}
+
+.result p {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+pre {
+  background: var(--box);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.small-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  background: var(--primary);
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-dark {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  z-index: 10;
+}

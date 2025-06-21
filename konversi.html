@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Bilangan</title>
+    <link rel="stylesheet" href="konversi.css" />
+  </head>
+  <body>
+    <!-- Pesawat animasi -->
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="plane"
+    />
+
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="awan"
+    />
+
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="awan2"
+    />
+
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="awan3"
+    />
+
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="awan4"
+    />
+
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="awan5"
+    />
+
+    <img
+      src="—Pngtree—awan putih dengan bayangan hitam_7263022.png"
+      class="awan6"
+    />
+
+    <button class="toggle-dark" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <div class="container">
+      <h1>Konversi Bilangan</h1>
+
+      <div class="form-group">
+        <label>Dari Basis:</label>
+        <select id="fromBase">
+          <option value="2">Biner</option>
+          <option value="10" selected>Desimal</option>
+          <option value="8">Oktal</option>
+          <option value="16">Hexadesimal</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Ke Basis:</label>
+        <select id="toBase">
+          <option value="2">Biner</option>
+          <option value="10">Desimal</option>
+          <option value="8">Oktal</option>
+          <option value="16">Hexadesimal</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Masukkan Angka:</label>
+        <input
+          type="text"
+          id="inputNumber"
+          placeholder="Contoh: -15 atau 255"
+        />
+      </div>
+
+      <button onclick="convert()">Konversi</button>
+
+      <div class="result" id="resultBox" style="display: none">
+        <p>Hasil: <span id="result"></span></p>
+
+        <div class="action-row">
+          <button class="small-btn" onclick="copyResult()">
+            📋 Salin Hasil
+          </button>
+        </div>
+
+        <pre id="explanation"></pre>
+      </div>
+    </div>
+
+    <script src="konversi.js"></script>
+  </body>
+</html>
